@@ -182,8 +182,24 @@ keep copies off the server, protect the file (it contains password hashes) and t
 
 ## 10. AI assistant disclosure
 
-An AI coding assistant (**Claude, by Anthropic**) was used to generate the first version of this code and the
-test scripts. I reviewed and ran everything. **One change made after reviewing the generated code:**
-the ← → move buttons send a `back` address so the user returns to the same filtered board; the first draft redirected to
-whatever value was sent, which is an *open-redirect* weakness. I changed `task_status.php` so only `board.php…` addresses
-are accepted. (Other review fixes are listed in `docs/TEST_CASES.md`.)
+## 10. AI Assistant Disclosure
+
+An AI coding assistant (**Claude, by Anthropic**) was used to generate the initial version of the Driftboard application and its test scripts. The generated code served as the starting point for the project.
+
+### My Contribution
+
+I worked on setting up the application in my local development environment and getting it running successfully. My contributions included:
+
+- **Environment Setup:** Configured the local development environment using XAMPP.
+- **Database Configuration:** Imported the `database.sql` file and configured the database for local execution.
+- **MySQL Troubleshooting:** Identified and resolved the MySQL port conflict between the existing MySQL Server and XAMPP.
+- **PHP Configuration:** Verified the availability of the required PHP extensions, including `PDO` and `pdo_mysql`.
+- **Application Execution:** Successfully launched the Driftboard application locally and accessed its login page.
+- **Documentation:** Captured application screenshots and organized the project files for GitHub submission.
+- **Project Understanding:** Explored the project structure, database configuration, authentication flow, task management features, and application functionality.
+
+### AI Assistance
+
+The initial application code and test scripts were AI-assisted. I used the generated project to understand the implementation, configure the environment, execute the application, and explore its functionality. I am continuing to improve my understanding of the codebase and its security features.
+
+
